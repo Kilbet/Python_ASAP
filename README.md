@@ -14,5 +14,5 @@ temperature = ASAP_data ['column_header2']
 Relative_humidity = ASAP_data ['column_header3']
 
 t0_normalized_degradation = percent_degradation - percent_degradation[0]
-#Unsure how to index cells if t=0
+#Unsure how to index cells if t=0 (more than one t0 sample)
 t0_normalized_lndeg = np.log(percent_degradation[1:])
